@@ -40,6 +40,11 @@ Uchováva zoznam všetkých zbraní, brnení, koristi, ako aj zoznam počtu kori
 Zoznam je znova reprezentovaný ako string obsahujúci ID jednotlivých predmetov, oddelených čiarkami.
 Taktiež je tu uložená informácia o aktuálne používanom brnení a zbrani.
 
+## Nehratelna postava
+Je to postava, u ktorej môže hrdina predávať alebo nakupovať predmety, poprípade si zvoliť úlohu, ktorú pôjde splniť
+Obsahuje meno, popis, zozamy úloh a predmetov, ktoré sú u tejto postavi k dispozícii.
+Taktiež má každá nehrateľná postava rôzne modifikátory predajných a nákupných cien zbraní a brnení. 
+
 ## Zbrane a Brnenia
 Každý záznam popisuje jedinečné brnenie alebo zbraň.
 Určuje množstvo atribútov, ktoré sú pri používaní predmetu pridané, ako aj poškodenie a dosah pre zbraň a zníženie utrpeného poškodenia pre pancier.
@@ -49,6 +54,22 @@ Zbrane aj brnenia majú určenú limitáciu minimálneho levelu pre použitie zb
 Korisť je predmet, ktorý je možné získať zabitím príšery(napríklad lebka démona alebo zlatý prsteň). Tieto predmety môže hrdina následne predať u nehrateľnej postavy
 Obsahuje informácie o názve, krátky popis, šancu na získanie, priemerný počet kusov koristi, ktoré zvyknú padnúť za zabitie démona a hodnotu danej koristi.
 
+## Ulohy
+Úlohy obsahujú svoj názov a popis, level, ktorý musí hrdina na odomknutie danej úlohy dosiahnuť, poprípade aký level musí predtým prejsť alebo akú príšeru zabiť, aby sa level odomkol.
+Ďalej sú tam informácie o odporúčanom leveli hrdinu na vstup do úlohy, odmeny, ktoré dostane po jej splnení.
+Taktiež je v tejto tabuľke zaznamenané, ktorí nepriatelia a v akých počtoch sa v úlohe postavia hrdinovi a na akej mape sa to bude odohrávať.
+
+## Mapa a Levely
+Mapa obsahuje záznamy o jednotlivých leveloch. Každý level má svoju výšku, šírku, svoje ID a informáciu o tom, ktorý level je potrebné prejsť, aby sa odomkol.
+Levely zaznamenávajú, aký objekt sa nachádza na každom políčku levelu(spojenie x a y súradnice), typ určuje, či je na políčku spoluhráč, nepriateľ, príšera alebo objekt, poprípade nič, ID typu odkazuje na presný objekt na danom poli.
+
+## Druhy textur
+Táto tabuľka uchováva všetky druhy textúr, ktoré sa môžu vyskytnúť na mape.
+
+##Log a Combat log
+Logy zaznamenávajú údaje o všetkých bojoch, ktoré hrdina absolvoval. Presne odkazuje na to, ktorý hrdina v boji bol, aký mal vtedy level, akú mal zbraň a brnenie, počas akej úlohy tento boj nastal, combat log.
+Zároveň odkazuje na démona, proti ktorému sa súboj odohral(z neho sa dá zistiť aj koľko xp za súboj hrdina získal)
+Combat log ukazuje poradie v ktorom na seba nepriatelia útočili, poškodenia, ktoré dané útoky vykonali, poprípade aké typy útokov hrdina využil. 
 
 ## Link na fyzický diagram
 https://dbdiagram.io/d/606f04aeecb54e10c33f567d
