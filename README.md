@@ -66,7 +66,7 @@ Levely zaznamenávajú, aký objekt sa nachádza na každom políčku levelu(spo
 ## Druhy textur
 Táto tabuľka uchováva všetky druhy textúr, ktoré sa môžu vyskytnúť na mape.
 
-##Log a Combat log
+## Log a Combat log
 Logy zaznamenávajú údaje o všetkých bojoch, ktoré hrdina absolvoval. Presne odkazuje na to, ktorý hrdina v boji bol, aký mal vtedy level, akú mal zbraň a brnenie, počas akej úlohy tento boj nastal, combat log.
 Zároveň odkazuje na démona, proti ktorému sa súboj odohral(z neho sa dá zistiť aj koľko xp za súboj hrdina získal)
 Combat log ukazuje poradie v ktorom na seba nepriatelia útočili, poškodenia, ktoré dané útoky vykonali, poprípade aké typy útokov hrdina využil. 
